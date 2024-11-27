@@ -1,0 +1,62 @@
+/* Responsive CSS file styles defined for smaller width devices */
+/* CSS for tablet devices */
+
+*{
+scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 576px) and (max-width: 820px) {
+.logo {
+  padding: 0 3rem;
+}
+
+.hamburger {
+  display: block;
+  padding: 0 3rem;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  padding: 0 3rem;
+  top: 85px;
+  background-color: #7234fa;
+  display: none;
+  transition: all 0.25s;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.menu .menu-list {
+  flex-direction: column;
+}
+}
+
+
+/* CSS for mobile devices */
+@media screen and (min-width: 280px) and (max-width: 576px) {
+.logo {
+  padding: 0 2rem;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  padding: 0 2rem;
+  top: 85px;
+  background-color: #7234fa;
+  display: none;
+  transition: all 0.25s;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.menu .menu-list {
+  flex-direction: column;
+}
+
+.hamburger {
+  display: block;
+  padding: 0 2rem;
+}
+}
